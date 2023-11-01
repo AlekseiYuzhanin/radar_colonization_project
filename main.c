@@ -10,9 +10,14 @@ int main()
     int factory = 1;
     int collected_water = 0;
     int drone = 0;
-    
+
     while(collected_water < N)
     {
+        if(N <= 1 || N >= 109)
+        {
+            printf("Введите число в диапазоне от 1 до 109\n");
+            return 0;
+        }
         ++days;
         if(days == 2)
         {
